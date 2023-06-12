@@ -28,7 +28,7 @@ def store_data():
     df['month'] = df.index.month
     df['month_name'] = df.index.month_name()
     df['day_of_week'] = df.index.day_name()
-    df['sales_total'] = df.item_price + df.sale_amount
+    df['sales_total'] = df.item_price * df.sale_amount
     return df
 
 def plot_distributions(dataframe):
